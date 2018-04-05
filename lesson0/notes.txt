@@ -5,3 +5,82 @@ GitBash setup
 Folder structure
 Docs shareing
 First push
+USER@admin MINGW64 /f/Projects/tekwill/src/tekwill_oca (master)
+$ git commit -a
+On branch master
+
+Initial commit
+
+Untracked files:
+        lesson0/
+
+nothing added to commit but untracked files present
+
+USER@admin MINGW64 /f/Projects/tekwill/src/tekwill_oca (master)
+$ cd lesson0/
+
+USER@admin MINGW64 /f/Projects/tekwill/src/tekwill_oca/lesson0 (master)
+$ ls -l
+total 1
+-rw-r--r-- 1 USER 197121 114 Apr  5 20:30 notes.txt
+
+USER@admin MINGW64 /f/Projects/tekwill/src/tekwill_oca/lesson0 (master)
+$ cd ..
+
+USER@admin MINGW64 /f/Projects/tekwill/src/tekwill_oca (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        lesson0/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+USER@admin MINGW64 /f/Projects/tekwill/src/tekwill_oca (master)
+$ git add lesson0
+
+USER@admin MINGW64 /f/Projects/tekwill/src/tekwill_oca (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   lesson0/notes.txt
+
+
+USER@admin MINGW64 /f/Projects/tekwill/src/tekwill_oca (master)
+$ git commit -a
+Aborting commit due to empty commit message.
+
+USER@admin MINGW64 /f/Projects/tekwill/src/tekwill_oca (master)
+$ git commit -am "primul commit"
+[master (root-commit) 2f3c3e3] primul commit
+ 1 file changed, 7 insertions(+)
+ create mode 100644 lesson0/notes.txt
+
+USER@admin MINGW64 /f/Projects/tekwill/src/tekwill_oca (master)
+$ git push origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': Mihail Kulev
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/MihailKulev/tekwill_oca.git
+
+USER@admin MINGW64 /f/Projects/tekwill/src/tekwill_oca (master)
+$ git push origin master
+Counting objects: 4, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 343 bytes | 114.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/MihailKulev/tekwill_oca.git
+ * [new branch]      master -> master
+
+USER@admin MINGW64 /f/Projects/tekwill/src/tekwill_oca (master)
+$
