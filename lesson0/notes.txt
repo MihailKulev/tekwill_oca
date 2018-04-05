@@ -1,0 +1,7 @@
+StudentContacs In GoogleDocs
+Stack setup
+GitHub Repo
+GitBash setup
+Folder structure
+Docs shareing
+First push
