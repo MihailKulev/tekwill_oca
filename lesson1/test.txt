@@ -1,0 +1,80 @@
+USER@admin MINGW64 /f/Projects/tekwill/src/tekwill_oca (master)
+$ ls -la
+total 4
+drwxr-xr-x 1 USER 197121 0 Apr 17 19:04 ./
+drwxr-xr-x 1 USER 197121 0 Apr  5 20:23 ../
+drwxr-xr-x 1 USER 197121 0 Apr  5 21:13 .git/
+drwxr-xr-x 1 USER 197121 0 Apr  5 20:25 lesson0/
+drwxr-xr-x 1 USER 197121 0 Apr 17 19:04 lesson1/
+
+USER@admin MINGW64 /f/Projects/tekwill/src/tekwill_oca (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+USER@admin MINGW64 /f/Projects/tekwill/src/tekwill_oca (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        lesson1/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+USER@admin MINGW64 /f/Projects/tekwill/src/tekwill_oca (master)
+$ git add lesson1/test.txt
+
+USER@admin MINGW64 /f/Projects/tekwill/src/tekwill_oca (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   lesson1/test.txt
+
+
+USER@admin MINGW64 /f/Projects/tekwill/src/tekwill_oca (master)
+$ git commit -m "add test file"
+[master 21f27a3] add test file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 lesson1/test.txt
+
+USER@admin MINGW64 /f/Projects/tekwill/src/tekwill_oca (master)
+$ git log
+commit 21f27a3c421d2de2feb10ed459b37bbe179a7b6c (HEAD -> master)
+Author: Mihail Kulev <mihailkulev@gmail.com>
+Date:   Tue Apr 17 19:10:41 2018 +0300
+
+    add test file
+
+commit 2db26df9a9174bdf89f47530f69826fed809bd48 (origin/master)
+Author: Mihail Kulev <mihailkulev@gmail.com>
+Date:   Thu Apr 5 21:13:58 2018 +0300
+
+    al doilea commit
+
+commit 2f3c3e37eb068092a76f6de970c9cc10213c9ba7
+Author: Mihail Kulev <mihailkulev@gmail.com>
+Date:   Thu Apr 5 21:03:10 2018 +0300
+
+    primul commit
+
+USER@admin MINGW64 /f/Projects/tekwill/src/tekwill_oca (master)
+$ git push origin master
+Counting objects: 4, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 314 bytes | 104.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/MihailKulev/tekwill_oca.git
+   2db26df..21f27a3  master -> master
+
+USER@admin MINGW64 /f/Projects/tekwill/src/tekwill_oca (master)
+$
