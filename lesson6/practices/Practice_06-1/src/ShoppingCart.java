@@ -6,7 +6,8 @@ public class ShoppingCart {
         item2 = new Item();
 
         // Print both item descriptions and run code
-        item1.desc = "Shirt";
+        item1.desc = "Shirt 1";
+
         item2.desc = "Pants";
 
         // Assign one item to another and run it again.
